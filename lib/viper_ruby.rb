@@ -2,6 +2,8 @@
 
 require_relative 'viper_ruby/version'
 require_relative 'system/check_ruby_syntax'
+require_relative 'system/check_spec_syntax'
+
 
 
 
