@@ -5,7 +5,7 @@ module Viper
   # TODO module documentation
   module Packages
     # TODO module documentation
-    module Ruby
+    module ViperRuby
       VERSION = '0.1.0'.freeze
     end
   end
