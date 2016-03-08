@@ -31,17 +31,14 @@ branch, switch to feature/1.1.0 before installing Viper.
 Install this package like any other Viper package. Typically, you would git clone 
 this repository into your ~/.viper/packages folder.
 
-### Adding this to your project's .viperrc file
-
-To include viper_simplecov package and load the coverage.json for your source tree, you might do the following:
-
-Create a file '.viperrc' in your project's source root folder. If one already exists,
-then add these lines to it:
+Then add the viper_ruby package to your ~/.viperrc file:
 
 ```
-# Include viper_ruby package
+# adds the viper_ruby Ruby language support:
 package viper_ruby
 ```
+
+
 ## Usage
 
 This package adds the file associations :ruby and :spec to the file association.
