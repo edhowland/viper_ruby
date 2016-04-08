@@ -9,3 +9,6 @@ require_relative 'system/lint_pass3'
 require_relative 'system/check_ruby_lint'
 require_relative 'system/check_spec_syntax'
 require_relative 'system/check_spec_lint'
+require_relative 'tools/load_mini_json'
+
+Viper::Session[:commands][:load_mini_json] = ->(b, *args) { load_mini_json(b, args[0]) }
