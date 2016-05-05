@@ -2,12 +2,15 @@
 
 Viper package forthe programming language Ruby
 
-## Version 0.3.0
+## Version 0.4.0
 
 ## Abstract
 
 Adds support for the  programming language Ruby  to the Viper Programmer's Editor. [Viper GitHub page](https://github.com/edhowland/viper)
 This package adds the commands check and lint for the Ruby and MiniSpec language files.
+This version adds support for the command load_mini file.json. Using the format of the Minitest::Reporters::JsonReporter gem for Minitest output in JSON.
+See: Rubygem: [minitest-reporters-json_reporter gem](https://rubygems.org/gems/minitest-reporters-json_reporter)
+GitHub: [https:://github.com/edhowland/minitest-reporters-json_reporter](https:://github.com/edhowland/minitest-reporters-json_reporter)
 
 
 ## Installation
@@ -61,4 +64,9 @@ $ viper -e 'load_mini spec-run.json'
 
 This command load_mini will create a new buffer, load and parse the 'spec-run.json' file and fill the buffer with the results.
 The test run is summarized for you and any failures are enumerated followed by the enumeration of any skipped tests.
+
+Note: The skipped tests are not enumerated in the JSON output unless you run the spec/test file with the '--verbose' command line argument.
+The Failures and Errors are always enumerated, if any.
+
+The results are listed in a scratch buffer. To return to the file that had the error, use the 'o file.rb' command or use the Ctrl-t key if already loaded.
 
