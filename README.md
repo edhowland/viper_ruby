@@ -2,7 +2,7 @@
 
 Viper package forthe programming language Ruby
 
-## Version 0.4.0
+## Version 1.2.0
 
 ## Abstract
 
@@ -26,6 +26,10 @@ git clone git@github.com:edhowland/viper_ruby.git
 
 This package, like all Viper packages, requires Viper version 1.1 or greater. If this is not the version in the your Viper installation,
 please re-install Viper with the current version.
+
+ 
+  This specific version of viper_ruby requires version 1.2.0 of Viper or later.
+  The format of snippets have changed to allow better nesting and proper indentation.
 
 
 ## Adding this package to Viper runtime
